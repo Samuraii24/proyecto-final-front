@@ -1,0 +1,80 @@
+.gallery {
+    display: flex;
+  }
+  
+  .principal {
+    width: 50%;
+    padding-right: 10px;
+  
+    > img {
+      border-radius: 16px;
+      height: 100%;
+      object-fit: cover;
+  
+      &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .grid {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+  
+    > div {
+      width: 50%;
+  
+      &:nth-child(1) {
+        padding: 0 10px 10px 0;
+      }
+      &:nth-child(2) {
+        padding: 0 0 10px 10px;
+      }
+      &:nth-child(3) {
+        padding: 10px 10px 0 0;
+      }
+      &:nth-child(4) {
+        padding: 10px 0 0 10px;
+      }
+  
+      > img {
+        border-radius: 16px;
+  
+        &:hover {
+          opacity: 0.6;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  
+  .carouselContainer {
+    height: 100%;
+    position: relative;
+  
+    .slick-slider {
+      height: 100%;
+    }
+  
+    .slick-list {
+      height: 100%;
+    }
+  
+    .slick-slide > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  
+    img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+
+        

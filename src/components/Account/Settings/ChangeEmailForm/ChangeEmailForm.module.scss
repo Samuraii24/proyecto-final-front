@@ -1,0 +1,26 @@
+.form {
+    width: 100%;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  
+    > div {
+      &:nth-child(1),
+      &:nth-child(2) {
+        width: 50%;
+        margin: 0 !important;
+      }
+  
+      &:nth-child(2) {
+        margin-left: 15px !important;
+      }
+  
+      &:last-of-type {
+        margin-left: 15px !important;
+      }
+    }
+  }
+  

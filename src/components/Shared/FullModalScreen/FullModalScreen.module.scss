@@ -1,0 +1,95 @@
+@import "~/src/scss/index.scss";
+
+.fullModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 !important;
+    border-radius: 0 !important;
+    overflow: hidden;
+    background-color: transparent !important; 
+  
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    z-index: 1000; 
+  
+    &:before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+      z-index: -1;
+    }
+  
+    > div {
+      padding: 0;
+      height: auto;
+    }
+  }
+  
+  .close {
+    position: absolute !important;
+    top: 0px !important;
+    right: 0px !important;
+    font-size: 20px !important;
+    color: white !important;
+    z-index: 1001; 
+    cursor: pointer;
+    
+  }
+  
+  .slick-prev,
+  .slick-next {
+    width: 40px;
+    height: 40px;
+    z-index: 1001; 
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 50%;
+  }
+  
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+  
+  .carouselContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+  
+    .slick-slider {
+      height: auto; 
+    }
+  
+    .slick-list {
+      height: auto; 
+    }
+  
+    .slick-slide > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
+  
+    img {
+      width: auto; 
+      height: auto; 
+      max-width: 100vw; 
+      max-height: 100vh; 
+      object-fit: contain;
+    }
+  }
