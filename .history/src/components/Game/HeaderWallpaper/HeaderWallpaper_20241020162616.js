@@ -1,8 +1,6 @@
 import styles from "./HeaderWallpaper.module.scss";
 import { Image } from "semantic-ui-react";
 
-const SERVER_HOST = "https://proyecto-final-back-c64o.onrender.com";
-
 export function HeaderWallpaper(props) {
   const { image } = props;
 

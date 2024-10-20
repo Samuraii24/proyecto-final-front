@@ -1,7 +1,7 @@
 import { authFetch, ENV } from "@/utils";
 import { forEach } from "lodash";
 
-const SERVER_HOST = "http://localhost:1337";
+const SERVER_HOST = "https://proyecto-final-back-c64o.onrender.com";
 
 // Función utilitaria para construir la URL completa
 const buildApiUrl = (path) => {
